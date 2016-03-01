@@ -1,0 +1,2 @@
+//----------Module------------------
+angular.module('triumverate', []);
