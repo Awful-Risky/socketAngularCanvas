@@ -2,9 +2,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-// var socketStuff = require('');
+// var socketStuff(http vs app.server) = require('');
 // var otherSocketStuff = require('');
-var test = ('yes')
+// var test = ('yes')
 
 
 //---Back-End Controller----------------------------
@@ -29,5 +29,5 @@ app.get('/', function(req, res){
 
 var port = 8080
 app.listen(port, function(){
-	console.log('triumverate is running on port ' + port);
+	console.log('The triumverate is running on port ' + port);
 });
