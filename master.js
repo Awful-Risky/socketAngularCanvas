@@ -56,12 +56,12 @@ socketServer.on('connection', function(socket){
 			if (err) console.log("NO!");
 
 			});
-			console.log('x-->', data.x)
-			console.log('y-->', data.y)
-			data.x = []
-			data.y = []
-			console.log('xNow-->', data.x)
-			console.log('yNow-->', data.y)
+			// console.log('x-->', data.x)
+			// console.log('y-->', data.y)
+			// data.x = []
+			// data.y = []
+			// console.log('xNow-->', data.x)
+			// console.log('yNow-->', data.y)
 
 			// socketServer.emit('lineSaved')  //Testing$$$$$$$
      	});
