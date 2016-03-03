@@ -74,10 +74,10 @@ function handleMouseMove(event) {
 function handleMouseUp(event) {
 	if (!event.primary) { return; }
 	stage.removeEventListener("stagemousemove", handleMouseMove);
-	console.log(xCoords)
-	console.log(yCoords)
-	console.log(xCoords.length)
-	console.log(yCoords.length)
+	// console.log(xCoords)
+	// console.log(yCoords)
+	// console.log(xCoords.length)
+	// console.log(yCoords.length)
 	var socket = io();
 
 	socket.emit('message',{ x: xCoords, y: yCoords})
