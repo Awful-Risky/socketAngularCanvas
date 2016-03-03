@@ -46,8 +46,8 @@ function handleMouseDown(event) {
 		stage.clear();
 		stage.removeChild(title);
 	}
-	color = colors[(index++) % colors.length];
-	stroke = Math.random() * 30 + 10 | 0;
+	color = "black"
+	stroke = 10
 	oldPt = new createjs.Point(stage.mouseX, stage.mouseY);
 	oldMidPt = oldPt.clone();
 	stage.addEventListener("stagemousemove", handleMouseMove);
