@@ -37,10 +37,11 @@ angular.module('triumverate').controller('triTroller', [
 			}
 			s.lineList.push(ourString)
 			console.log("Pushing -->> ",ourString)
+			console.log(s.lineList[0])
+
 
 		})
 }
-	
 	// });
 
 }]);

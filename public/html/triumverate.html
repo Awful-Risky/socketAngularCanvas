@@ -32,8 +32,8 @@
 					<code>Graphics</code> vector drawing API in EaselJS</p>
 				</header>
 				<canvas id="myCanvas" width="800" height="800"></canvas><button ng-click="clicker()">Submit</button>
-				<svg ng-repeat="line in lineList" width="800" height = "400" viewPort="0 0 800 400">
-					<polyline  fill="none" stroke = "black" points={{line}}>
+				<svg width="800" height = "400" viewPort="0 0 800 400">
+					<polyline  fill="none" stroke = "black" points="{{lineList[0]}}">
 				</svg>
 
 			</div>
