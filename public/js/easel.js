@@ -78,4 +78,7 @@ function handleMouseUp(event) {
 	console.log(yCoords)
 	console.log(xCoords.length)
 	console.log(yCoords.length)
+	var socket = io();
+
+	socket.emit('message',{ x: xCoords, y: yCoords})
 }
