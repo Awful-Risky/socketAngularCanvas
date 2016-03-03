@@ -46,21 +46,30 @@ socketServer.use(function(socket, next){
 socketServer.on('connection', function(socket){
     console.log("someone connected")
 		socket.on('message', function(data){
-			console.log(data)
+			// console.log(data)
 			var newLine = new Vector.Vector({
 				x : data.x,
 				y : data.y
-			})
+			});
 
-			newLine.save(function (err){
-			if (err) console.log("NO!")
-		})
+			newLine.save(function (err){			
+			if (err) console.log("NO!");
 
-     })
+			});
+			// console.log('x-->', data.x)
+			// console.log('y-->', data.y)
+			// data.x = []
+			// data.y = []
+			// console.log('xNow-->', data.x)
+			// console.log('yNow-->', data.y)
+
+			// socketServer.emit('lineSaved')  //Testing$$$$$$$
+     	});
+
 		socket.on('disconnection', function(){
         console.log('someone disconnected')
-		})
-   })
+		});
+   });
 
     // socket.join('super cool room')
 

@@ -23,7 +23,7 @@ angular.module('triumverate').controller('triTroller', [
 		.then(function(returnData){
 			// $scope.lineList = returnData
 			// console.log("go bananas -->> " , returnData)
-			console.log("Data from server -->>", returnData.data[0].x[0])
+			// console.log("Data from server -->>", returnData.data[0].x[0])
 			for (var i = 0; i < returnData.data.length; i++){
 					var ourString = ""
 				for (var j = 0; j<returnData.data[i].x.length; j++){
@@ -40,14 +40,14 @@ angular.module('triumverate').controller('triTroller', [
 			// console.log("Pushing -->> ",ourString)
 			// console.log(s.lineList[0])
 			
-			allLines = []
-			for (var i = 0; i<1; i++) {
-				s.tempSVG = '<svg width="800" height = "400" viewPort="0 0 800 400"><polyline  fill="none" stroke = "black" points="' + s.lineList[i] + '">';
-				console.log(s.tempSVG)
+			// allLines = []
+			// for (var i = 0; i<1; i++) {
+			// 	s.tempSVG = '<svg width="800" height = "400" viewPort="0 0 800 400"><polyline  fill="none" stroke = "black" points="' + s.lineList[i] + '">';
+			// 	console.log(s.tempSVG)
 
-				s.trustedHTML = $sce.trustAsHtml(s.tempSVG)
-				console.log(s.trustedHTML)
-			}
+			// 	s.trustedHTML = $sce.trustAsHtml(s.tempSVG)
+			// 	console.log(s.trustedHTML)
+			// }
 		})
 	}
 	// });

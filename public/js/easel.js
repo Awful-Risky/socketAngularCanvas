@@ -81,4 +81,11 @@ function handleMouseUp(event) {
 	var socket = io();
 
 	socket.emit('message',{ x: xCoords, y: yCoords})
+	// socket.on('lineSaved', function(){     //Testing$$$$$$$
+	// 	xCoords = []                       //Testing$$$$$$$
+	// 	yCoords = []                       //Testing$$$$$$$
+	// });
+	xCoords = []
+	yCoords = []
+
 }
