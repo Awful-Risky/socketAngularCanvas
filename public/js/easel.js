@@ -41,6 +41,8 @@ function init() {
 }
 
 function handleMouseDown(event) {
+	xCoords = []
+	yCoords = []
 	if (!event.primary) { return; }
 	if (stage.contains(title)) {
 		stage.clear();
@@ -85,7 +87,6 @@ function handleMouseUp(event) {
 	// 	xCoords = []                       //Testing$$$$$$$
 	// 	yCoords = []                       //Testing$$$$$$$
 	// });
-	xCoords = []
-	yCoords = []
+
 
 }
